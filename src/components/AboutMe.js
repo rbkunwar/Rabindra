@@ -1,9 +1,10 @@
 import React from 'react'
 import user from "../pics/rab.jpeg"
+import { Layout } from './Layout';
 
 export const AboutMe = () => {
   return (
-    <>
+    <Layout>
     <section className="section5 flex" id="about">
         <h1 className="title">About Me</h1>
 
@@ -35,7 +36,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   )
 }
-export default AboutMe;

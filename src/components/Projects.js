@@ -2,10 +2,11 @@ import React from 'react'
 import mom from "../pics/mom.avif";
 import dad from "../pics/download.jpeg";
 import react1 from "../pics/react.png";
+import { Layout } from './Layout';
 
 export const Projects = () => {
   return (
-    <>
+    <Layout>
     <section className="section4 flex" id="projects">
         <h1 className="title">My Recent Work</h1>
 
@@ -42,7 +43,7 @@ export const Projects = () => {
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   )
 }
-export default Projects
+

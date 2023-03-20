@@ -1,17 +1,18 @@
 import React from 'react'
 import user from "../pics/1234.png"
 import resume from "../pics/RBK-RESUME.docx"
+import { Layout } from './Layout'
 
 export const Hero = () => {
   return (
-    <>
+    <Layout>
      <section className="section1 grid">
         <div className="left flex">
           <img src={user} alt="profile pic" />
       </div>
       <div className="right flex">
         <div className="flex">
-          <h2 className="name">I am a <br />DEVELOPER <span className="tag"></span></h2>
+          <h2 className="name">I am a Software Developer <span className="tag"></span></h2>
         </div>
         <button>
           <a href={resume} download={true}
@@ -61,7 +62,6 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-    </>
+    </Layout>
   )
 }
-export default Hero;
